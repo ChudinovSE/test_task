@@ -1,0 +1,28 @@
+\doxysection{stat\+\_\+data.\+h}
+\hypertarget{stat__data_8h_source}{}\label{stat__data_8h_source}\index{data\_processing/stat\_data/stat\_data.h@{data\_processing/stat\_data/stat\_data.h}}
+\mbox{\hyperlink{stat__data_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structStatData}{StatData}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{long}\ id;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ count;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ cost;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ primary:1;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ mode:3;}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{structStatData}{StatData}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00031\ \mbox{\hyperlink{structStatData}{StatData}}*\ \mbox{\hyperlink{stat__data_8h_a6692e9e700ea4c92ee93defab20357bb}{load\_dump}}(\textcolor{keywordtype}{char}\ *path,\ \textcolor{keywordtype}{int}\ *n);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00045\ \mbox{\hyperlink{structStatData}{StatData}}*\ \mbox{\hyperlink{stat__data_8h_ab1ebd29ef52119f6e50e8b54990d21c8}{join\_dump}}(\mbox{\hyperlink{structStatData}{StatData}}\ *data\_array\_a,\ \textcolor{keywordtype}{int}\ *n\_a,\ \mbox{\hyperlink{structStatData}{StatData}}\ *data\_array\_b,\ \textcolor{keywordtype}{int}\ *n\_b,\ \textcolor{keywordtype}{int}\ *n\_res);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stat__data_8h_a33ec5fdec9b178262f37960b6eef37c0}{store\_dump}}(\textcolor{keywordtype}{char}\ *path,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structStatData}{StatData}}\ *data\_array,\ \textcolor{keywordtype}{int}\ *n);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stat__data_8h_a9e9bf28dfcd224b2f41e21224aa5209c}{sort\_dump\_std}}(\mbox{\hyperlink{structStatData}{StatData}}\ *data\_array,\ \textcolor{keywordtype}{int}\ *n);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stat__data_8h_a91060c04b107aefbe81813c4f2657b56}{sort\_dump}}(\mbox{\hyperlink{structStatData}{StatData}}\ *data\_array,\ \textcolor{keywordtype}{int}\ *n);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stat__data_8h_af37980840328433b5579d31e65aecb02}{print\_stat\_data\_table}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structStatData}{StatData}}\ *data,\ \textcolor{keywordtype}{int}\ *n);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{stat__data_8h_a1445314a69be0cd31c8971a3b2e43e91}{generation\_rnd\_data\_array}}(\mbox{\hyperlink{structStatData}{StatData}}\ *data\_array,\ \textcolor{keywordtype}{int}\ *n);}
+
+\end{DoxyCode}

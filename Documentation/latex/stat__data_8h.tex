@@ -1,0 +1,178 @@
+\doxysection{data\+\_\+processing/stat\+\_\+data/stat\+\_\+data.h File Reference}
+\hypertarget{stat__data_8h}{}\label{stat__data_8h}\index{data\_processing/stat\_data/stat\_data.h@{data\_processing/stat\_data/stat\_data.h}}
+
+
+Заголовочный файл с описанием заданного формата данных  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structStatData}{Stat\+Data}}
+\begin{DoxyCompactList}\small\item\em Хранение тестовых данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structStatData}{Stat\+Data}} \mbox{\hyperlink{stat__data_8h_a8be04d883ae7a3040f2381ef3a01032f}{Stat\+Data}}
+\begin{DoxyCompactList}\small\item\em Хранение тестовых данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{stat__data_8h_a6692e9e700ea4c92ee93defab20357bb}{load\+\_\+dump}} (char \texorpdfstring{$\ast$}{*}path, int \texorpdfstring{$\ast$}{*}n)
+\item 
+\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{stat__data_8h_ab1ebd29ef52119f6e50e8b54990d21c8}{join\+\_\+dump}} (\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array\+\_\+a, int \texorpdfstring{$\ast$}{*}n\+\_\+a, \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array\+\_\+b, int \texorpdfstring{$\ast$}{*}n\+\_\+b, int \texorpdfstring{$\ast$}{*}n\+\_\+res)
+\item 
+int \mbox{\hyperlink{stat__data_8h_a33ec5fdec9b178262f37960b6eef37c0}{store\+\_\+dump}} (char \texorpdfstring{$\ast$}{*}path, const \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array, int \texorpdfstring{$\ast$}{*}n)
+\item 
+int \mbox{\hyperlink{stat__data_8h_a9e9bf28dfcd224b2f41e21224aa5209c}{sort\+\_\+dump\+\_\+std}} (\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array, int \texorpdfstring{$\ast$}{*}n)
+\item 
+int \mbox{\hyperlink{stat__data_8h_a91060c04b107aefbe81813c4f2657b56}{sort\+\_\+dump}} (\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array, int \texorpdfstring{$\ast$}{*}n)
+\item 
+int \mbox{\hyperlink{stat__data_8h_af37980840328433b5579d31e65aecb02}{print\+\_\+stat\+\_\+data\+\_\+table}} (const \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data, int \texorpdfstring{$\ast$}{*}n)
+\item 
+int \mbox{\hyperlink{stat__data_8h_a1445314a69be0cd31c8971a3b2e43e91}{generation\+\_\+rnd\+\_\+data\+\_\+array}} (\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}data\+\_\+array, int \texorpdfstring{$\ast$}{*}n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл с описанием заданного формата данных 
+
+Данный файл содержит в себе определения структур, и прототипов функций для хранения и обработки данных в заданном условием задачи формате 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{stat__data_8h_a8be04d883ae7a3040f2381ef3a01032f}\label{stat__data_8h_a8be04d883ae7a3040f2381ef3a01032f} 
+\index{stat\_data.h@{stat\_data.h}!StatData@{StatData}}
+\index{StatData@{StatData}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{StatData}{StatData}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structStatData}{Stat\+Data}} \mbox{\hyperlink{structStatData}{Stat\+Data}}}
+
+
+
+Хранение тестовых данных. 
+
+Структура хранения данных, описанная в условиях задачи ~\newline
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{stat__data_8h_a1445314a69be0cd31c8971a3b2e43e91}\label{stat__data_8h_a1445314a69be0cd31c8971a3b2e43e91} 
+\index{stat\_data.h@{stat\_data.h}!generation\_rnd\_data\_array@{generation\_rnd\_data\_array}}
+\index{generation\_rnd\_data\_array@{generation\_rnd\_data\_array}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{generation\_rnd\_data\_array()}{generation\_rnd\_data\_array()}}
+{\footnotesize\ttfamily int generation\+\_\+rnd\+\_\+data\+\_\+array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Генерирует массивых тестовых данных со случайным значением в каждом поле (используется для ручного тестирования и отладки) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em data\+\_\+array} & Указатель на массив структур для сохранения тестовых данных \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Указвтель на целое число, равное количеству структур в массиве (длина массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_ab1ebd29ef52119f6e50e8b54990d21c8}\label{stat__data_8h_ab1ebd29ef52119f6e50e8b54990d21c8} 
+\index{stat\_data.h@{stat\_data.h}!join\_dump@{join\_dump}}
+\index{join\_dump@{join\_dump}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{join\_dump()}{join\_dump()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*} join\+\_\+dump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array\+\_\+a,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+\_\+a,  }\item[{\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array\+\_\+b,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+\_\+b,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+\_\+res }\end{DoxyParamCaption})}
+
+Объеденяет два массива, в соответствии с правилами п.2 тестового задания 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data\+\_\+array\+\_\+a} & Указатель на массив структур тестовых данных А \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+\_\+a} & Указатель на целое число, равное количиству структур в массиве А (длина массива А) \\
+\hline
+\mbox{\texttt{ in}}  & {\em data\+\_\+array\+\_\+b} & Указатель на массив структур тестовых данных Б \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+\_\+b} & Указатель на целое число, равное количиству структур в массиве Б (длина массива Б) \\
+\hline
+\mbox{\texttt{ out}}  & {\em n\+\_\+res} & Указвтель на целое число, в него сохраниться число структур в итоговом массиве (длина итогового массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на итоговый массив структур 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_a6692e9e700ea4c92ee93defab20357bb}\label{stat__data_8h_a6692e9e700ea4c92ee93defab20357bb} 
+\index{stat\_data.h@{stat\_data.h}!load\_dump@{load\_dump}}
+\index{load\_dump@{load\_dump}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{load\_dump()}{load\_dump()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*} load\+\_\+dump (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Загружает массив тестовых данных из файла 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & Указатель на строку, содержащую путь к файлу, для загрузки данных \\
+\hline
+\mbox{\texttt{ out}}  & {\em n} & Указвтель на целое число, в него сохраниться число прочитанных из файла структур (длина прочитанного массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на массив прочитанных структур 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_af37980840328433b5579d31e65aecb02}\label{stat__data_8h_af37980840328433b5579d31e65aecb02} 
+\index{stat\_data.h@{stat\_data.h}!print\_stat\_data\_table@{print\_stat\_data\_table}}
+\index{print\_stat\_data\_table@{print\_stat\_data\_table}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{print\_stat\_data\_table()}{print\_stat\_data\_table()}}
+{\footnotesize\ttfamily int print\+\_\+stat\+\_\+data\+\_\+table (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Выводит первые строки (не более 10) массива тестовых данных в виде таблицы, по правилам описанным в п.3 тестового задания 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data\+\_\+array} & Указатель на массив структур тестовых данных для вывода \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Указвтель на целое число, равное количеству структур в массиве (длина массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное выполнение 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_a91060c04b107aefbe81813c4f2657b56}\label{stat__data_8h_a91060c04b107aefbe81813c4f2657b56} 
+\index{stat\_data.h@{stat\_data.h}!sort\_dump@{sort\_dump}}
+\index{sort\_dump@{sort\_dump}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{sort\_dump()}{sort\_dump()}}
+{\footnotesize\ttfamily int sort\+\_\+dump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Сортирует массив тестовых данных по полю cost используя собственную реализацию метода "{}пузырек"{} 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data\+\_\+array} & Указатель на массив структур тестовых данных для сортировки \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Указвтель на целое число, равное количеству структур в массиве (длина массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_a9e9bf28dfcd224b2f41e21224aa5209c}\label{stat__data_8h_a9e9bf28dfcd224b2f41e21224aa5209c} 
+\index{stat\_data.h@{stat\_data.h}!sort\_dump\_std@{sort\_dump\_std}}
+\index{sort\_dump\_std@{sort\_dump\_std}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{sort\_dump\_std()}{sort\_dump\_std()}}
+{\footnotesize\ttfamily int sort\+\_\+dump\+\_\+std (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Сортирует массив тестовых данных по полю cost используя стандартную функцию qsort из stdlib 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data\+\_\+array} & Указатель на массив структур тестовых данных для сортировки \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Указвтель на целое число, равное количеству структур в массиве (длина массива) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 
+\end{DoxyReturn}
+\Hypertarget{stat__data_8h_a33ec5fdec9b178262f37960b6eef37c0}\label{stat__data_8h_a33ec5fdec9b178262f37960b6eef37c0} 
+\index{stat\_data.h@{stat\_data.h}!store\_dump@{store\_dump}}
+\index{store\_dump@{store\_dump}!stat\_data.h@{stat\_data.h}}
+\doxysubsubsection{\texorpdfstring{store\_dump()}{store\_dump()}}
+{\footnotesize\ttfamily int store\+\_\+dump (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path,  }\item[{const \mbox{\hyperlink{structStatData}{Stat\+Data}} \texorpdfstring{$\ast$}{*}}]{data\+\_\+array,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Сохраняет массив тестовых данных в файл 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path} & Указатель на строку, содержащую путь к файлу, для сохранения данных \\
+\hline
+\mbox{\texttt{ in}}  & {\em data\+\_\+array} & Указатель на массив структур тестовых данных для сохранения \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Указвтель на целое число, равное количеству структур в массиве для сохранения в фаил (длина массива для сохранения) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 1 -\/ ошибка при открытии файла 
+\end{DoxyReturn}

@@ -1,0 +1,41 @@
+\doxysection{data\+\_\+processing/metrics/metrics.c File Reference}
+\hypertarget{metrics_8c}{}\label{metrics_8c}\index{data\_processing/metrics/metrics.c@{data\_processing/metrics/metrics.c}}
+
+
+Фаил с реализацией функций для обработки метрик  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}./metrics.\+h"{}}\newline
+Include dependency graph for metrics.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{metrics_8c_a1839470b8f6a2f6deeeb9ff3941e788a}\label{metrics_8c_a1839470b8f6a2f6deeeb9ff3941e788a} 
+\mbox{\hyperlink{structTimeUnits}{Time\+Units}} {\bfseries \+\_\+convert\+\_\+ns} (long ns)
+\item 
+int \mbox{\hyperlink{metrics_8c_ad43e90c9a4b88fa9f0615da16ea42503}{print\+\_\+time\+\_\+metrics}} (\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}metrics)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Фаил с реализацией функций для обработки метрик 
+
+Данный файл содержит в себе реализации функций, используемых в демонстрационной программе для обработки метрик 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{metrics_8c_ad43e90c9a4b88fa9f0615da16ea42503}\label{metrics_8c_ad43e90c9a4b88fa9f0615da16ea42503} 
+\index{metrics.c@{metrics.c}!print\_time\_metrics@{print\_time\_metrics}}
+\index{print\_time\_metrics@{print\_time\_metrics}!metrics.c@{metrics.c}}
+\doxysubsubsection{\texorpdfstring{print\_time\_metrics()}{print\_time\_metrics()}}
+{\footnotesize\ttfamily int print\+\_\+time\+\_\+metrics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}}]{metrics }\end{DoxyParamCaption})}
+
+Выводит в виде форматированной таблицы знаения временных метрик выполнения 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em metrics} & Указвтель на структуру \doxylink{structTimeMetrics}{Time\+Metrics} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки, 0 в случае успешного выполнения 
+\end{DoxyReturn}

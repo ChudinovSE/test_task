@@ -1,0 +1,48 @@
+\doxysection{data\+\_\+processing/data\+\_\+processing.c File Reference}
+\hypertarget{data__processing_8c}{}\label{data__processing_8c}\index{data\_processing/data\_processing.c@{data\_processing/data\_processing.c}}
+
+
+Фаил с реализацией функций для обработки тестовых данных  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include "{}./stat\+\_\+data/stat\+\_\+data.\+h"{}}\newline
+{\ttfamily \#include "{}./metrics/metrics.\+h"{}}\newline
+Include dependency graph for data\+\_\+processing.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{data__processing_8c_af069712b1b64c036985fe5be9f8ec8bf}\label{data__processing_8c_af069712b1b64c036985fe5be9f8ec8bf} 
+int {\bfseries generation\+\_\+rnd\+\_\+data\+\_\+files} (char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+a, int \texorpdfstring{$\ast$}{*}n\+\_\+a, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+b, int \texorpdfstring{$\ast$}{*}n\+\_\+b)
+\item 
+int \mbox{\hyperlink{data__processing_8c_a6ac266c4b5d6928661f10db288450228}{processing\+\_\+data}} (char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+a, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+b, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+res, \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}metrics)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Фаил с реализацией функций для обработки тестовых данных 
+
+Данный файл содержит в себе реализации функций, используемых в демонстрационной программе для обработки данных реализация утилиты п.3 тестового задания 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{data__processing_8c_a6ac266c4b5d6928661f10db288450228}\label{data__processing_8c_a6ac266c4b5d6928661f10db288450228} 
+\index{data\_processing.c@{data\_processing.c}!processing\_data@{processing\_data}}
+\index{processing\_data@{processing\_data}!data\_processing.c@{data\_processing.c}}
+\doxysubsubsection{\texorpdfstring{processing\_data()}{processing\_data()}}
+{\footnotesize\ttfamily int processing\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+a,  }\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+b,  }\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+res,  }\item[{\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}}]{metrics }\end{DoxyParamCaption})}
+
+Функция обработки данных в соответвествии с требованиями п.3 тестового задания 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+a} & Путь к файлу для загрузки массива А \\
+\hline
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+b} & Путь к файлу для загрузки массива Б \\
+\hline
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+b} & Путь к файлу для сохранения итогового массива \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 1 -\/ Ошибка загрузки данных из файла 2 -\/ Ошибка при слиянии массивов 3 -\/ Ошибка при сохранении итогового масссива в фаил 
+\end{DoxyReturn}

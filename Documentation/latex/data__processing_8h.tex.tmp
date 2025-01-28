@@ -1,0 +1,63 @@
+\doxysection{data\+\_\+processing/data\+\_\+processing.h File Reference}
+\hypertarget{data__processing_8h}{}\label{data__processing_8h}\index{data\_processing/data\_processing.h@{data\_processing/data\_processing.h}}
+
+
+Заголовочный файл с описанием функций обработки данных  
+
+
+{\ttfamily \#include "{}./metrics/metrics.\+h"{}}\newline
+Include dependency graph for data\+\_\+processing.\+h\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{data__processing_8h_a3c1ce26abc5b49e7dfe473704e0e5c81}{generation\+\_\+rnd\+\_\+data\+\_\+files}} (char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+a, int n\+\_\+a, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+b, int n\+\_\+b)
+\item 
+int \mbox{\hyperlink{data__processing_8h_a6ac266c4b5d6928661f10db288450228}{processing\+\_\+data}} (char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+a, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+b, char \texorpdfstring{$\ast$}{*}path\+\_\+file\+\_\+res, \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}metrics)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл с описанием функций обработки данных 
+
+Данный файл содержит в себе определения прототипов функций, используемых в демонстрационной программе для обработки тестовых данных 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{data__processing_8h_a3c1ce26abc5b49e7dfe473704e0e5c81}\label{data__processing_8h_a3c1ce26abc5b49e7dfe473704e0e5c81} 
+\index{data\_processing.h@{data\_processing.h}!generation\_rnd\_data\_files@{generation\_rnd\_data\_files}}
+\index{generation\_rnd\_data\_files@{generation\_rnd\_data\_files}!data\_processing.h@{data\_processing.h}}
+\doxysubsubsection{\texorpdfstring{generation\_rnd\_data\_files()}{generation\_rnd\_data\_files()}}
+{\footnotesize\ttfamily int generation\+\_\+rnd\+\_\+data\+\_\+files (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+a,  }\item[{int}]{n\+\_\+a,  }\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+b,  }\item[{int}]{n\+\_\+b }\end{DoxyParamCaption})}
+
+Генерирует два массива тестовых данных заданной длины со случайным значением в каждом поле и сохраняет в файлы (используется для ручного тестирования и отладки) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+a} & Путь к файлу для сохранения массива А \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Целое число, равное требуемому количеству структур в массиве А \\
+\hline
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+b} & Путь к файлу для сохранения массива Б \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Целое число, равное требуемому количеству структур в массиве Б \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 
+\end{DoxyReturn}
+\Hypertarget{data__processing_8h_a6ac266c4b5d6928661f10db288450228}\label{data__processing_8h_a6ac266c4b5d6928661f10db288450228} 
+\index{data\_processing.h@{data\_processing.h}!processing\_data@{processing\_data}}
+\index{processing\_data@{processing\_data}!data\_processing.h@{data\_processing.h}}
+\doxysubsubsection{\texorpdfstring{processing\_data()}{processing\_data()}}
+{\footnotesize\ttfamily int processing\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+a,  }\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+b,  }\item[{char \texorpdfstring{$\ast$}{*}}]{path\+\_\+file\+\_\+res,  }\item[{\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}}]{metrics }\end{DoxyParamCaption})}
+
+Функция обработки данных в соответвествии с требованиями п.3 тестового задания 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+a} & Путь к файлу для загрузки массива А \\
+\hline
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+b} & Путь к файлу для загрузки массива Б \\
+\hline
+\mbox{\texttt{ in}}  & {\em path\+\_\+file\+\_\+b} & Путь к файлу для сохранения итогового массива \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки 0 -\/ успешное сохранение 1 -\/ Ошибка загрузки данных из файла 2 -\/ Ошибка при слиянии массивов 3 -\/ Ошибка при сохранении итогового масссива в фаил 
+\end{DoxyReturn}

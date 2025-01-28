@@ -1,0 +1,125 @@
+\doxysection{test.\+h File Reference}
+\hypertarget{test_8h}{}\label{test_8h}\index{test.h@{test.h}}
+
+
+Заголовочный файл с константами для тестирования обработки данных  
+
+
+{\ttfamily \#include "{}./data\+\_\+processing/stat\+\_\+data/stat\+\_\+data.\+h"{}}\newline
+Include dependency graph for test.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{test_8h_a7ae84644e589aef402a0d86408c79a34}\label{test_8h_a7ae84644e589aef402a0d86408c79a34} 
+\#define {\bfseries PATH\+\_\+\+FILE\+\_\+A}~"{}./data\+\_\+file\+\_\+a.\+data"{}
+\item 
+\Hypertarget{test_8h_ac9715cbc8151b4c3ab921b6057f4a60e}\label{test_8h_ac9715cbc8151b4c3ab921b6057f4a60e} 
+\#define {\bfseries PATH\+\_\+\+FILE\+\_\+B}~"{}./data\+\_\+file\+\_\+b.\+data"{}
+\item 
+\Hypertarget{test_8h_a5cd7723b2bc853c367c79e0f32ee6c5d}\label{test_8h_a5cd7723b2bc853c367c79e0f32ee6c5d} 
+\#define {\bfseries PATH\+\_\+\+FILE\+\_\+\+RES}~"{}./data\+\_\+file\+\_\+res.\+data"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structStatData}{Stat\+Data}} \mbox{\hyperlink{test_8h_a3d146a75ae1bc5ec710cdd79d3697ba1}{case\+\_\+1\+\_\+in\+\_\+a}} \mbox{[}2\mbox{]}
+\item 
+const \mbox{\hyperlink{structStatData}{Stat\+Data}} \mbox{\hyperlink{test_8h_a228d945baee73138d72864f7e9e3afec}{case\+\_\+1\+\_\+in\+\_\+b}} \mbox{[}2\mbox{]}
+\item 
+const \mbox{\hyperlink{structStatData}{Stat\+Data}} \mbox{\hyperlink{test_8h_ad926e3f2c05d5ccf19b03fa9d3a1f7e4}{case\+\_\+1\+\_\+out}} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл с константами для тестирования обработки данных 
+
+Данный файл содержит в себе определения констант для корректного тестирования утилиты обработки данных. Константы заданны в соответсвии с требованиями п.4 тестового задания 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{test_8h_a3d146a75ae1bc5ec710cdd79d3697ba1}\label{test_8h_a3d146a75ae1bc5ec710cdd79d3697ba1} 
+\index{test.h@{test.h}!case\_1\_in\_a@{case\_1\_in\_a}}
+\index{case\_1\_in\_a@{case\_1\_in\_a}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{case\_1\_in\_a}{case\_1\_in\_a}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structStatData}{Stat\+Data}} case\+\_\+1\+\_\+in\+\_\+a\mbox{[}2\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90889,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 13,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 3.567,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 0,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode=3\ }
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90089,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 1,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 88.90,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 1,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode=0\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{test_8h_a228d945baee73138d72864f7e9e3afec}\label{test_8h_a228d945baee73138d72864f7e9e3afec} 
+\index{test.h@{test.h}!case\_1\_in\_b@{case\_1\_in\_b}}
+\index{case\_1\_in\_b@{case\_1\_in\_b}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{case\_1\_in\_b}{case\_1\_in\_b}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structStatData}{Stat\+Data}} case\+\_\+1\+\_\+in\+\_\+b\mbox{[}2\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90089,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 13,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 0.011,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 0,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode=2\ }
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90189,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 1000,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 1.00003,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 1,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode=2}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{test_8h_ad926e3f2c05d5ccf19b03fa9d3a1f7e4}\label{test_8h_ad926e3f2c05d5ccf19b03fa9d3a1f7e4} 
+\index{test.h@{test.h}!case\_1\_out@{case\_1\_out}}
+\index{case\_1\_out@{case\_1\_out}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{case\_1\_out}{case\_1\_out}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structStatData}{Stat\+Data}} case\+\_\+1\+\_\+out\mbox{[}3\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90189,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 1000,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 1.00003,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 1,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode\ =\ 2\ }
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90889,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 13,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 3.567,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 0,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode\ =\ 3\ }
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .id\ =\ 90089,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .count\ =\ 14,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .cost\ =\ 88.911,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .primary\ =\ 0,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .mode\ =\ 2\ }
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

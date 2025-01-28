@@ -1,0 +1,62 @@
+\doxysection{data\+\_\+processing/metrics/metrics.h File Reference}
+\hypertarget{metrics_8h}{}\label{metrics_8h}\index{data\_processing/metrics/metrics.h@{data\_processing/metrics/metrics.h}}
+
+
+Заголовочный файл с описанием метрик  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}}
+\begin{DoxyCompactList}\small\item\em Хранение временных метрик тесста. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structTimeUnits}{Time\+Units}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \mbox{\hyperlink{metrics_8h_a537ba46300733901daf4a91ebbf11ba9}{Time\+Metrics}}
+\begin{DoxyCompactList}\small\item\em Хранение временных метрик тесста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{metrics_8h_ad43e90c9a4b88fa9f0615da16ea42503}{print\+\_\+time\+\_\+metrics}} (\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}metrics)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл с описанием метрик 
+
+Данный файл содержит в себе определения структур, и прототипов функций используемых в демонстрационной программе 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{metrics_8h_a537ba46300733901daf4a91ebbf11ba9}\label{metrics_8h_a537ba46300733901daf4a91ebbf11ba9} 
+\index{metrics.h@{metrics.h}!TimeMetrics@{TimeMetrics}}
+\index{TimeMetrics@{TimeMetrics}!metrics.h@{metrics.h}}
+\doxysubsubsection{\texorpdfstring{TimeMetrics}{TimeMetrics}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}}}
+
+
+
+Хранение временных метрик тесста. 
+
+Структура хранения временных метрик выполнения тестового алгоритма п.3 тестового задания, значения в наносекундах ~\newline
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{metrics_8h_ad43e90c9a4b88fa9f0615da16ea42503}\label{metrics_8h_ad43e90c9a4b88fa9f0615da16ea42503} 
+\index{metrics.h@{metrics.h}!print\_time\_metrics@{print\_time\_metrics}}
+\index{print\_time\_metrics@{print\_time\_metrics}!metrics.h@{metrics.h}}
+\doxysubsubsection{\texorpdfstring{print\_time\_metrics()}{print\_time\_metrics()}}
+{\footnotesize\ttfamily int print\+\_\+time\+\_\+metrics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTimeMetrics}{Time\+Metrics}} \texorpdfstring{$\ast$}{*}}]{metrics }\end{DoxyParamCaption})}
+
+Выводит в виде форматированной таблицы знаения временных метрик выполнения 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em metrics} & Указвтель на структуру \doxylink{structTimeMetrics}{Time\+Metrics} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Код ошибки, 0 в случае успешного выполнения 
+\end{DoxyReturn}
